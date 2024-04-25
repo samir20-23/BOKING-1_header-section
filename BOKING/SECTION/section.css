@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    /*colors */
+    --color1: #77b8bf;
+    --color2: #ddd5d2;
+    --color3: #2b2323;
+    --color4: #916457;
+    --color5: #337abf;
+    --color6: #607c5d;
+    --color7: #7fd83a;
+    --color8: #663e35;
+    --color9: #d8bc3b;
+    --color10: #324977;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+    /* max-width:1180px; */
+  }
+  .section .section_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* search */
+  
+  .section_content .search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    font-size: 29px;
+    min-width: 350px;
+  }
+  #formSearch #inputsearch {
+    padding: 6px 15px;
+    border-radius: 3px;
+  }
+  #formSearch #submit {
+    padding: 6px 5px;
+    border-radius: 3px;
+  }
+  /* location */
+  .section_content .rows_locations {
+    width: 90%;
+    box-shadow: 0 0 12px 2px var(--color3);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .rows_locations .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid var(--color4);
+    border-radius: 5px;
+    gap: 5px;
+    margin: 12px;
+    width: 300px;
+  }
+  
+  .location img {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .location .fa-map-marker {
+    font-size: 20px;
+    color: var(--color1);
+    text-shadow: 0px 0px 0.5px var(--color7);
+  }
+  .location h4 {
+    text-shadow: 0 0 0.5px var(--color3);
+    text-align: center;
+  }
+  .location .prais {
+    color: var(--color7);
+    text-shadow: 0 0 0.5px var(--color7);
+    font-size: 18px;
+  }
+  .location button {
+    width: 100%;
+    border: none;
+    background-color: var(--color1);
+    color: var(--white);
+    font-size: 20px;
+    padding: 8px;
+  }
+  
