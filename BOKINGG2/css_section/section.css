@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    /*colors */
+    --color1: #c2e8fd;
+    --color2: #ddd5d2;
+    --color3: #2b2323; 
+    --color4: #916457;
+    --color5: #337abf;
+    --color6: #607c5d;
+    --color7: #7fd83a;
+    --color8: #663e35;
+    --color9: #d8bc3b;
+    --color10: #324977;
+    --color11: #ff0000;
+    --color12: blue;
+    --color13: #376efd;
+    --fontSizenav: 22px;
+    --fontSizelogo: 35px;
+    --gap: 80px;
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    min-width: 290px;
+    /* max-width:1180px; */
+  }
+  .section .section_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* search */
+  
+  .section_content .search {
+    width: 50%;
+    display: flex;
+    max-width: 695px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    font-size: 29px;
+    min-width: 350px;
+  }
+  #formSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    max-width:460px;
+    min-width: 250px;
+  }
+  #formSearch #inputsearch {
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 2px solid var(--color3);
+  }
+  #formSearch #submit {
+    width: 40%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    background :var(--color13);
+    border: 2px solid var(--color3);
+  }
+  /* location */
+  
+  .section_content .rows_locations {
+    width: 90%;
+    box-shadow: 0 0 20px 0.1px var(--color3);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .rows_locations .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+    gap: 5px;
+    margin: 12px;
+    width: 300px;
+  }
+  
+  .location img {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .location .fa-map-marker {
+    font-size: var(--fontSizenav);
+    color: var(--color13);
+    text-shadow: 0px 0px 0.5px var(--color13);
+  }
+  .location h4 {
+    text-shadow: 0 0 0.5px var(--color3);
+    text-align: center;
+  }
+  .location .prais {
+    color: var(--color11  );
+    text-shadow: 0 0 0.5px var(--color11);
+    font-size: var(--fontSizenav);
+  }
+  .location button {
+    width: 100%;
+    border: none;
+    background-color: var(--color13);
+    color: var(--white);
+    font-size: var(--fontSizenav);
+    padding: 8px;
+  }
+@media only screen and (max-width: 380px) {
+  
+      /* search */
+      
+      .section_content .search {
+        width: 40%;
+        gap: 0px;
+        font-size: 20px;
+      }
+      #formSearch{
+        width: 60%;
+      } 
+      #formSearch #inputsearch {
+        padding: 8px 15px;
+      }
+      #formSearch #submit {
+    min-width: 122px;
+    max-width: 150px;
+      }
+      /* location */
+      .section_content .rows_locations {
+        width: 85%;
+        gap: 0;
+      }
+      .rows_locations .location {
+        gap: 5px;
+        width: 90%;
+      }
+
+      }
