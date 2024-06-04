@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--colortext);
+  font-family: var(--fontFamily);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+:root {
+  /*colors */
+  --color1: #c2e8fd;
+  --color2: #ddd5d2;
+  --color3: #2b2323;
+  --color4: #916457;
+  --color5: #337abf;
+  --color6: #607c5d;
+  --color7: #7fd83a;
+  --color8: #663e35;
+  --color9: #d8bc3b;
+  --color10: #324977;
+  --color11: #ff0000;
+  --color12: blue;
+  --color13: #376efd;
+  --color14: #ffffff;
+  --color15: #ff6828;
+  --color16: #ff733753;
+  --color17: #000000;
+  --color18: #000000a1;
+  --color19: #00000090;
+  --color20: #366fff1d;
+  --text1:40px;
+  --text2:13px;
+  --sizeicon:30px;
+  --logo: 24px;
+  --nav: 25px;
+  ----home: 25px;
+  --button:20px;
+  --gap: 80px;
+}
+
+
+
+/* header */
+header {
+  font-family: "Exo 2", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+
+}
+
+.allheader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* nav */
+nav {
+  width: 100%;
+  height: 70px;
+  max-height: 70px;
+  background: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid var(--color2);
+  
+}
+.add_nav{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* icon nav */
+
+#navicon .fa-bars{
+font-size: var(--sizeicon);
+color: var(--color17);
+display: none;
+cursor: pointer;
+}
+/*                                                                     icon nav */
+/* nav left */
+nav .left-section {
+  font-size: var(--logo);
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--color17);
+  text-shadow: 0 0 9px var(--color14);
+}
+/*                                                                nav left */
+/* nav mid */
+.mid-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.mid-section ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 40px;
+  
+}
+.mid-section ul li {
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 21px;
+}
+.mid-section ul li #home {
+  font-size: var(--home);
+  text-shadow: 0 0 1px rgb(143, 143, 143);
+  color: var(--color17);
+ 
+}
+
+.mid-section ul li:hover {
+  color: rgb(46, 46, 46);
+}
+.mid-section ul li #home:hover {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.mid-section ul li a {
+  border-radius: 10px;
+  text-shadow: 0 0 1px black;
+ 
+}
+.mid-section li:hover a {
+  color: black;
+  text-shadow: 0 0 5px black;
+  transition: 0.3s;
+}
+/*                                                                nav mid */
+/* nav right */
+.rigth-section a button {
+  background: var(--color13);
+  color: var(--color14);
+  width: 163px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-size: var(--button);
+  margin: 8px 0;
+}
+.rigth-section a:hover button {
+  color: var(--color2);
+  text-shadow: 0 0 20px var(--color3);
+  cursor: pointer;
+}
+
+/*                                                                nav right */
+
+/*                                                                nav */
+/* nav bar */
+
+
+    #navbar {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 5;
+      height: 100%;
+      background: var(--color18);
+      border-right: 3px solid var(--color3);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 1px 11px -3px var(--color18);
+    }
+  
+    
+    #navbar ul {
+      width: 100%;
+      height: 325px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    #navbar ul li {
+      width: 100%;
+      list-style: none;
+      margin-bottom: 5px;
+      text-shadow: 0 0 12px black;
+    }
+    
+    #navbar ul li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: var(--color14);
+      font-size:var(--nav) ;
+    }
+    /* hover */
+    #navbar ul li:hover {
+      background: var(--color13);
+      transition: 0.3s;
+      text-shadow: 0 0 10px var(--color14);
+      border-radius: 12px;
+    }
+    /*                        hover */
+    
+/*                                                                       nav bar */
+.header_Add{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* interface */
+.header_Add .interheader {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items:  flex-start;
+}
+/* textheader */
+#bigbackgroundheader{
+  min-width: 300px;
+}
+#bigbackgroundheader #backgroundheader{
+  width: 96%;
+  height: 215px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background: #3d8e938a;
+  box-shadow: 0 0 17px -7px #0000;
+}
+@media only screen and (max-width: 980px) {
+  /* nav left */
+ 
+  .allheader {
+    display: block;
+  }
+  nav{
+    max-height: 50px;
+  }
+  nav .left-section {
+    font-size: var(--logo);
+    margin: 3px 0;
+  }
+  /* nav mid */
+  .mid-section {
+    display: none;
+  } 
+ 
+  /* icon nav */
+  #navicon .fa-bars{
+    display: block;
+  }
+  
+ 
+  /* nav right */
+  .rigth-section a button {
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: var(--button);
+    margin: 3px 0;
+  }
+   /* interface */
+  .header_Add .interheader {
+    padding: 22px 0;
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+}
+@media only screen and (max-width: 300px) {
+  #bigbackgroundheader #backgroundheader{
+    width: 99%;
+    height: 195px;
+    margin-top:5px ;
+    border-radius: 5px;
+    background: black;
+  }
+}
